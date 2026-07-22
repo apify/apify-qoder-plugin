@@ -1,0 +1,19 @@
+{
+  "name": "apify",
+  "owner": {
+    "name": "Apify",
+    "email": "support@apify.com"
+  },
+  "metadata": {
+    "description": "Extract data from any website with thousands of trusted scrapers, crawlers, and automations from Apify Store.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "apify",
+      "description": "Extract data from any website with thousands of trusted scrapers, crawlers, and automations from Apify Store. Run ready-made Actors for social media, e-commerce, search engines, maps, and travel sites, or build, debug, and publish your own.",
+      "version": "0.1.0",
+      "source": "./apify"
+    }
+  ]
+}

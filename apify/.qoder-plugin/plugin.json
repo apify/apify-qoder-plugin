@@ -1,0 +1,17 @@
+{
+  "name": "apify",
+  "version": "0.1.0",
+  "description": "Extract data from any website with thousands of trusted scrapers, crawlers, and automations from Apify Store. Run ready-made Actors for social media, e-commerce, search engines, maps, and travel sites, or build, debug, and publish your own.",
+  "author": {
+    "name": "Apify",
+    "url": "https://apify.com"
+  },
+  "homepage": "https://apify.com",
+  "repository": "https://github.com/apify/apify-qoder-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["apify", "web-scraping", "data-extraction", "actors", "mcp"],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "rules": "./.qoder/rules/",
+  "mcpServers": "./.mcp.json"
+}

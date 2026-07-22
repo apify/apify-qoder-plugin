@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "apify": {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com"
+    }
+  }
+}
