@@ -9,6 +9,12 @@
   "homepage": "https://apify.com",
   "repository": "https://github.com/apify/apify-qoder-plugin",
   "license": "Apache-2.0",
-  "keywords": ["apify", "web-scraping", "data-extraction", "actors", "mcp"],
+  "keywords": [
+    "apify",
+    "web-scraping",
+    "data-extraction",
+    "actors",
+    "mcp"
+  ],
   "mcpServers": "./.mcp.json"
 }
