@@ -1,0 +1,9 @@
+# Reference plugins imported for comparison — not part of this plugin
+example-projects/
+
+# Build artifacts
+*.zip
+
+# OS cruft
+.DS_Store
+**/.DS_Store

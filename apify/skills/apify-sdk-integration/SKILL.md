@@ -1,7 +1,6 @@
 ---
 name: apify-sdk-integration
 description: Integrate Apify into an existing JavaScript/TypeScript or Python application using the apify-client package. Use when adding web scraping, automation, or data extraction capabilities to an existing app via the Apify API.
-version: 0.1.0
 ---
 
 # Apify SDK Integration

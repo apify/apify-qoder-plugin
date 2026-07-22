@@ -1,9 +1,6 @@
 # Apify plugin for Qoder
 
-Extract data from any website with thousands of trusted scrapers, crawlers, and
-automations from the [Apify Store](https://apify.com/store). Run ready-made
-**Actors** for social media, video, e-commerce, search engines, maps, and travel
-sites — or build, debug, and publish your own — directly from Qoder.
+Extract data from any website with thousands of trusted scrapers, crawlers, and automations from the [Apify Store](https://apify.com/store). Run ready-made **Actors** for social media, video, e-commerce, search engines, maps, and travel sites, or build, debug, and publish your own, directly from Qoder.
 
 ## What's inside
 
@@ -29,10 +26,7 @@ The same bundle installs in Qoder IDE/CLI and QoderWork.
 
 ## Authentication
 
-The `apify` MCP server uses **OAuth**. On the first Actor call, Qoder opens a
-browser window to authorize against your Apify account — no API token to paste.
-Don't have an account? Sign up free at
-[console.apify.com/sign-up](https://console.apify.com/sign-up).
+The `apify` MCP server uses **OAuth**. On the first Actor call, Qoder opens a browser window to authorize against your Apify account, no API token to paste. Don't have an account? Sign up free at [console.apify.com/sign-up](https://console.apify.com/sign-up).
 
 ## Usage
 
@@ -51,11 +45,10 @@ The `apify` subagent picks the right route and skill automatically.
 
 ## Maintainers
 
-Skills and the subagent in this repo are **generated** from the
-`apify-plugins-internal` source of truth (the `qoder` platform). Do not hand-edit
-`skills/` or `agents/` here — change them upstream and rebuild. The manifest
-(`.qoder-plugin/plugin.json`), `.mcp.json`, and `.qoder/rules/` are maintained
-directly in this repo.
+The plugin lives in [`apify/`](./apify). Its `skills/` and `agents/` are **generated** from the `apify-plugins-internal` source of truth (the `qoder` platform). **Do not hand-edit them here**; change them upstream and rebuild. The manifest (`apify/.qoder-plugin/plugin.json`), `apify/.mcp.json`, `apify/qoder.md`, and `apify/CONNECTORS.md` are maintained directly in this repo.
+
+- **[CONTRIBUTING.md](./CONTRIBUTING.md):** repo layout, generated-vs-manual files, the `apify-plugins-internal` relationship, local dev/test.
+- **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to QoderWork and the Qoder CLI marketplace.
 
 ## License
 
