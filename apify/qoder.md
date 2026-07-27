@@ -20,7 +20,7 @@ Engage whenever the user wants to:
   - `apify-actorization`: convert an existing project into an Actor.
   - `apify-generate-output-schema`: generate an Actor's output schemas.
   - `apify-sdk-integration`: call Actors from an existing app via `apify-client`.
-- **MCP connector:** `apify` (declared in `.mcp.json`) exposes Actor search, run, and dataset tools. See [CONNECTORS.md](./CONNECTORS.md). On first use, Qoder authorizes against Apify via OAuth.
+- **MCP connector:** `apify` (declared in `.mcp.json`) exposes Actor search, run, and dataset tools. On first use, Qoder authorizes against Apify via OAuth.
 
 ## Working rules
 

@@ -46,9 +46,8 @@ The `apify` subagent picks the right route and skill automatically.
 
 ## Maintainers
 
-The plugin lives in [`apify/`](./apify). Its `skills/` and `agents/` are **generated** from the `apify-plugins-internal` source of truth (the `qoder` platform). **Do not hand-edit them here**; change them upstream and rebuild. The manifest (`apify/.qoder-plugin/plugin.json`), `apify/.mcp.json`, `apify/qoder.md`, and `apify/CONNECTORS.md` are maintained directly in this repo.
+The plugin lives in [`apify/`](./apify). Its `skills/` and `agents/` are **generated** from the `apify-plugins-internal` source of truth (the `qoder` platform) and propagate into this repo automatically via the sync — **do not hand-edit or hand-add them here**; change them upstream. The manifest (`apify/.qoder-plugin/plugin.json`), `apify/.mcp.json`, and `apify/qoder.md` are maintained directly in this repo.
 
-- **[CONTRIBUTING.md](./CONTRIBUTING.md):** repo layout, generated-vs-manual files, the `apify-plugins-internal` relationship, local dev/test.
 - **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to the marketplace (QoderWork/Qoder IDE and Qoder CLI).
 
 ## License
