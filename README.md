@@ -16,14 +16,7 @@ Extract data from any website with thousands of trusted scrapers, crawlers, and 
 
 ## Installation
 
-**QoderWork & Qoder IDE** — install from the marketplace (the plugin is published via ZIP and the QoderWork publish form).
-
-**Qoder CLI** — add the repo as a custom marketplace source, then install:
-
-```bash
-qodercli plugins marketplace add apify/apify-qoder-plugin   # link the repo
-qodercli plugins install apify@apify                        # install the plugin
-```
+Installation steps for the Qoder CLI, IDE, and QoderWork are in the Apify docs: **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder-cli)**.
 
 ## Authentication
 

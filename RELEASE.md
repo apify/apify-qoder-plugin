@@ -51,15 +51,9 @@ Publishing is a **manual, review-gated** step in the web app. There is no git/AP
 3. **Submit for Review** (Plugin review is a structural pre-check + automated review).
 4. Manage the listing under **My Publications** (installs, edit info, new versions, delist/relist). A new version re-triggers full review; existing users get an opt-in update notification.
 
-## 3. Distribute via Qoder CLI (marketplace)
+## 3. Installing the plugin (end users)
 
-No build or ZIP. The CLI reads the repo's root `.qoder-plugin/marketplace.json`:
-
-```bash
-qodercli plugins marketplace add apify/apify-qoder-plugin   # owner/repo or the git URL
-qodercli plugins install apify@apify                        # plugin-name @ marketplace-name
-qodercli plugins marketplace update                         # pull later updates
-```
+End-user installation for the Qoder CLI, IDE, and QoderWork is documented in the Apify docs: **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder-cli)**.
 
 ## Notes & open items
 
