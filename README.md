@@ -16,7 +16,11 @@ Extract data from any website with thousands of trusted scrapers, crawlers, and 
 
 ## Installation
 
-Installation steps for the Qoder CLI, IDE, and QoderWork are in the Apify docs: **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder-cli)**.
+Installation steps live in the Apify docs — **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder)**:
+
+- **[Qoder CLI](https://docs.apify.com/integrations/qoder-cli)**
+- **[Qoder IDE](https://docs.apify.com/integrations/qoder-ide)**
+- **[QoderWork](https://docs.apify.com/integrations/qoder-work)**
 
 ## Authentication
 

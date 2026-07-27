@@ -53,7 +53,11 @@ Publishing is a **manual, review-gated** step in the web app. There is no git/AP
 
 ## 3. Installing the plugin (end users)
 
-End-user installation for the Qoder CLI, IDE, and QoderWork is documented in the Apify docs: **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder-cli)**.
+End-user installation is documented in the Apify docs — **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder)**:
+
+- **[Qoder CLI](https://docs.apify.com/integrations/qoder-cli)**
+- **[Qoder IDE](https://docs.apify.com/integrations/qoder-ide)**
+- **[QoderWork](https://docs.apify.com/integrations/qoder-work)**
 
 ## Notes & open items
 
