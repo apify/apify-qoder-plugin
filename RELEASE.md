@@ -35,8 +35,6 @@ That ZIP is the artifact for QoderWork.
    - `custom` — set **custom_version** explicitly (e.g. `0.1.0`). **Use this for the very first release**, since `auto` has no prior tag to diff against.
 3. Run it, then check the `chore(release): <version>` commit diff and the published release.
 
-> **Repo/token note.** The workflow's repo guard is currently set to `daveomri/apify-qoder-plugin` for testing, and the push uses the default `GITHUB_TOKEN` (falling back from `APIFY_SERVICE_ACCOUNT_GITHUB_TOKEN`). Requires *Settings → Actions → General → Workflow permissions = Read and write*. When this moves to `apify/apify-qoder-plugin`, switch the guard back to the apify-org check; the service-account token is then used automatically.
-
 ## 2. Publish to QoderWork (public marketplace)
 
 QoderWork publishing is a **manual, review-gated** step in the web app. There is no git/API auto-publish.

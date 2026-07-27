@@ -4,10 +4,6 @@ name: Create a release
 # git-cliff derives the version from conventional commits, we bump the three
 # manifest version fields + CHANGELOG.md, create the GitHub release, and attach
 # the QoderWork ZIP (contents of `apify/`).
-#
-# NOTE: the repo guard below is set to daveomri/apify-qoder-plugin for testing.
-# When this moves to apify/apify-qoder-plugin, switch it back to the apify-org
-# check and use secrets.APIFY_SERVICE_ACCOUNT_GITHUB_TOKEN for the push.
 
 permissions: {}
 
@@ -45,9 +41,9 @@ jobs:
       release_notes: ${{ steps.release_metadata.outputs.release_notes }}
     steps:
       - name: Verify running on main in the expected repository
-        if: github.ref != 'refs/heads/main' || github.repository != 'daveomri/apify-qoder-plugin'
+        if: github.ref != 'refs/heads/main' || github.repository != 'apify/apify-qoder-plugin'
         run: |
-          echo "::error title=Wrong branch or repository::Releases must run from main in daveomri/apify-qoder-plugin. ref=${{ github.ref }} repo=${{ github.repository }}"
+          echo "::error title=Wrong branch or repository::Releases must run from main in apify/apify-qoder-plugin. ref=${{ github.ref }} repo=${{ github.repository }}"
           exit 1
       - name: Validate inputs
         if: inputs.release_type == 'custom' && inputs.custom_version == ''
@@ -74,9 +70,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # Falls back to the default GITHUB_TOKEN when the service-account
-          # secret is absent (e.g. this personal test repo).
-          token: ${{ secrets.APIFY_SERVICE_ACCOUNT_GITHUB_TOKEN || github.token }}
+          token: ${{ secrets.APIFY_SERVICE_ACCOUNT_GITHUB_TOKEN }}
       - name: Bump version in all three manifest fields
         env:
           VERSION: ${{ needs.release_metadata.outputs.version_number }}
