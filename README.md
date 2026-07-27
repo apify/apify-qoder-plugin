@@ -16,13 +16,14 @@ Extract data from any website with thousands of trusted scrapers, crawlers, and 
 
 ## Installation
 
-Install from the QoderWork Expert Kits marketplace, or add the bundle manually:
+**QoderWork & Qoder IDE** — install from the marketplace (the plugin is published via ZIP and the QoderWork publish form).
+
+**Qoder CLI** — add the repo as a custom marketplace source, then install:
 
 ```bash
-qodercli plugins install ./apify-qoder-plugin
+qodercli plugins marketplace add apify/apify-qoder-plugin   # link the repo
+qodercli plugins install apify@apify                        # install the plugin
 ```
-
-The same bundle installs in Qoder IDE/CLI and QoderWork.
 
 ## Authentication
 
@@ -48,7 +49,7 @@ The `apify` subagent picks the right route and skill automatically.
 The plugin lives in [`apify/`](./apify). Its `skills/` and `agents/` are **generated** from the `apify-plugins-internal` source of truth (the `qoder` platform). **Do not hand-edit them here**; change them upstream and rebuild. The manifest (`apify/.qoder-plugin/plugin.json`), `apify/.mcp.json`, `apify/qoder.md`, and `apify/CONNECTORS.md` are maintained directly in this repo.
 
 - **[CONTRIBUTING.md](./CONTRIBUTING.md):** repo layout, generated-vs-manual files, the `apify-plugins-internal` relationship, local dev/test.
-- **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to QoderWork and the Qoder CLI marketplace.
+- **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to the marketplace (QoderWork/Qoder IDE and Qoder CLI).
 
 ## License
 
