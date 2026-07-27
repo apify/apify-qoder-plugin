@@ -41,12 +41,13 @@ Publishing is a **manual, review-gated** step in the web app. There is no git/AP
 
 1. Go to **qoder.com > My Publications > Publish > Plugin**.
 2. Fill the **Publish Plugin** form:
-   - **Icon:** `assets/icon.png` (PNG/JPG/WebP, 1:1, ≤500 KB). *SVG is not accepted.*
+   - **Icon:** upload `assets/icon.png` — 1:1, ≤500 KB, PNG/JPG/WebP (SVG is not accepted).
    - **Display name:** `Apify`
-   - **Description:** a marketplace-friendly summary.
-   - **Category:** pick from the dropdown (e.g. Productivity / Developer Tools).
-   - **Contact:** `support@apify.com` or the GitHub repo URL.
-   - **Plugin file:** the `apify-qoder-plugin-<tag>.zip` from the GitHub release (must contain `plugin.json`; ≤500 files, ≤100 MB).
+   - **Description:** use the `description` field from `apify/.qoder-plugin/plugin.json`.
+   - **Category:** `Data Analysis` (from the fixed dropdown: Administration · HR · Finance · Legal · Marketing · Sales · Product & R&D · Operations · Data Analysis · Supply Chain · Design · Government & Public Affairs · Healthcare · Education · Consulting · Creation · Investment · Other).
+   - **Developer signature:** `Apify` (shown publicly as "by Apify"; defaults to the submitting account's name, so set it explicitly).
+   - **Contact:** `support@apify.com`
+   - **Plugin file:** `apify-qoder-plugin-<tag>.zip` from the GitHub release (must contain `plugin.json`; ≤500 files, ≤100 MB).
 3. **Submit for Review** (Plugin review is a structural pre-check + automated review).
 4. Manage the listing under **My Publications** (installs, edit info, new versions, delist/relist). A new version re-triggers full review; existing users get an opt-in update notification.
 
