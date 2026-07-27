@@ -64,6 +64,6 @@ qodercli plugins marketplace update                         # pull later updates
 ## Notes & open items
 
 - `.qoder-plugin/marketplace.json` is **Qoder-CLI-only**. QoderWork and Qoder IDE ignore it and take listing metadata from the publish form.
-- **MCP auth:** the bundled `.mcp.json` uses the bare `https://mcp.apify.com` URL, which works via OAuth in the Qoder CLI. For the **QoderWork/Qoder IDE marketplace**, the "resolvable dependencies" rule may require the `{{USER_CONFIG}}` + `_setup` declaration form, or an officially listed Apify **Connector**. Verify on first submission.
+- **MCP auth:** the bundled `.mcp.json` uses the bare `https://mcp.apify.com` URL; Qoder authorizes via OAuth on first use (no API token to paste). Verified in the Qoder CLI.
 - **Naming:** QoderWork favors a real-world role/job-title name; "Apify" is a brand and may draw review feedback.
 - **Skill content placeholders:** skills document credentials with placeholders (`<APIFY_TOKEN>`, `export APIFY_TOKEN=your_token_here`). This is standard and satisfies the "no real credentials in examples" rule, but a strict automated review *could* flag them. Watch for this on the first marketplace submission.
