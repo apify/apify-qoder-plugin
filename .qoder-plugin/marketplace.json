@@ -5,13 +5,13 @@
     "email": "support@apify.com"
   },
   "metadata": {
-    "description": "Extract data from any website with thousands of trusted scrapers, crawlers, and automations from Apify Store.",
+    "description": "Apify: the largest marketplace of tools for AI.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "apify",
-      "description": "Extract data from any website with thousands of trusted scrapers, crawlers, and automations from Apify Store. Run ready-made Actors for social media, e-commerce, search engines, maps, and travel sites, or build, debug, and publish your own.",
+      "description": "Run ready-made Actors from Apify, the largest marketplace of tools for AI, or build and publish your own.",
       "version": "0.1.0",
       "source": "./apify"
     }

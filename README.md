@@ -1,6 +1,6 @@
 # Apify plugin for Qoder
 
-Extract data from any website with thousands of trusted scrapers, crawlers, and automations from the [Apify Store](https://apify.com/store). Run ready-made **Actors** for social media, video, e-commerce, search engines, maps, and travel sites, or build, debug, and publish your own, directly from Qoder.
+Run ready-made **Actors** from [Apify](https://apify.com/store), the largest marketplace of tools for AI, or build and publish your own, directly from Qoder.
 
 ## What's inside
 
