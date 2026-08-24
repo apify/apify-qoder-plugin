@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] (2026-08-24)
+
+### Changed
+
+- Updated Apify MCP server URL in `.mcp.json` to include `?client=qoder` for client identification.
+
 ## [0.1.0](https://github.com/apify/apify-qoder-plugin/releases/tag/v0.1.0) (2026-08-07)
 
 ### 🚀 Features
