@@ -2,7 +2,7 @@
   "mcpServers": {
     "apify": {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com"
+      "url": "https://mcp.apify.com/?client=qoder+plugin"
     }
   }
 }
