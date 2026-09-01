@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.1](https://github.com/apify/apify-qoder-plugin/releases/tag/v0.1.1) (2026-09-01)
+
+### 🚀 Features
+
+- Basic mcp telemetry ([8f7510a](https://github.com/apify/apify-qoder-plugin/commit/8f7510a9e99d7d8ab8dca9c066df8fc8c4fb4f21)) by [@Jakub-Vacek](https://github.com/Jakub-Vacek)
+
+### 🐛 Bug Fixes
+
+- Add compatibility for qwen oauth ([#6](https://github.com/apify/apify-qoder-plugin/pull/6)) ([d28e85b](https://github.com/apify/apify-qoder-plugin/commit/d28e85b2e56f935a16ec0dbb55471f67359e35fc)) by [@daveomri](https://github.com/daveomri)
+
+
 ## [0.1.1] (2026-08-24)
 
 ### Changed
