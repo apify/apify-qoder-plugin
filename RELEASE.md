@@ -1,9 +1,9 @@
 # Releasing & Publishing
 
-The plugin ships through two channels, both sourced from the marketplace:
+The plugin ships as a single **Qoder marketplace** listing, published from a GitHub release ZIP:
 
-- **Qoder CLI:** installed from the marketplace by manually adding the repo link. No build needed.
-- **QoderWork & Qoder IDE:** installed from the marketplace after the plugin is submitted via ZIP and the publish form. Manual, review-gated.
+- **Qoder CLI, IDE, Desktop app, and QoderWork** install that plugin from the marketplace listing. The install method differs per surface — a CLI command, a one-click install in the IDE, or downloading the ZIP and importing it (Desktop and QoderWork). See the end-user docs.
+- **QoderWake and the JetBrains plugin** don't use the plugin. They connect to the Apify MCP server (`https://mcp.apify.com`) directly, so they need no release or publish step.
 
 ## Versioning
 
@@ -24,7 +24,7 @@ Releases are triggered from the **Actions** tab — no manual tagging. On dispat
 3. **`create_github_release`** — tags that commit and publishes the GitHub release with the generated notes.
 4. **`package_zip`** — zips the **contents of `apify/`** (so `.qoder-plugin/` is at the ZIP root) and attaches `apify-qoder-plugin-<tag>.zip` to the release.
 
-That ZIP is the artifact for the QoderWork & Qoder IDE marketplace.
+That ZIP is the artifact you publish to the Qoder marketplace.
 
 ### How to run it
 
@@ -35,9 +35,9 @@ That ZIP is the artifact for the QoderWork & Qoder IDE marketplace.
    - `custom` — set **custom_version** explicitly (e.g. `0.1.0`). **Use this for the very first release**, since `auto` has no prior tag to diff against.
 3. Run it, then check the `chore(release): <version>` commit diff and the published release.
 
-## 2. Publish to QoderWork & Qoder IDE (public marketplace)
+## 2. Publish to the Qoder marketplace
 
-Publishing is a **manual, review-gated** step in the web app. There is no git/API auto-publish. Both QoderWork and Qoder IDE install the plugin from this marketplace listing.
+Publishing is a **manual, review-gated** step in the web app. There is no git/API auto-publish. The Qoder CLI, IDE, Desktop app, and QoderWork all install the plugin from this marketplace listing.
 
 1. Go to **qoder.com > My Publications > Publish > Plugin**.
 2. Fill the **Publish Plugin** form:
@@ -53,15 +53,14 @@ Publishing is a **manual, review-gated** step in the web app. There is no git/AP
 
 ## 3. Installing the plugin (end users)
 
-End-user installation is documented in the Apify docs — **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder)**:
+End-user installation is documented in the Apify docs:
 
-- **[Qoder CLI](https://docs.apify.com/integrations/qoder-cli)**
-- **[Qoder IDE](https://docs.apify.com/integrations/qoder-ide)**
-- **[QoderWork](https://docs.apify.com/integrations/qoder-work)**
+- **[Qoder integration](https://docs.apify.com/integrations/qoder-plugin)** — the Qoder CLI, IDE, Desktop app, and QoderWork, plus QoderWake and the JetBrains plugin via the Apify MCP server.
+- **[Qwen Code integration](https://docs.apify.com/integrations/qwen-code)** — Qwen Code reuses the same plugin.
 
 ## Notes & open items
 
-- `.qoder-plugin/marketplace.json` is **Qoder-CLI-only**. QoderWork and Qoder IDE ignore it and take listing metadata from the publish form.
+- `.qoder-plugin/marketplace.json` is **Qoder-CLI-only**. The GUI surfaces (IDE, Desktop app, QoderWork) ignore it and take listing metadata from the publish form.
 - **MCP auth:** the bundled `.mcp.json` uses the bare `https://mcp.apify.com` URL; Qoder authorizes via OAuth on first use (no API token to paste). Verified in the Qoder CLI.
-- **Naming:** QoderWork favors a real-world role/job-title name; "Apify" is a brand and may draw review feedback.
+- **Naming:** the marketplace favors a real-world role/job-title name; "Apify" is a brand and may draw review feedback.
 - **Skill content placeholders:** skills document credentials with placeholders (`<APIFY_TOKEN>`, `export APIFY_TOKEN=your_token_here`). This is standard and satisfies the "no real credentials in examples" rule, but a strict automated review *could* flag them. Watch for this on the first marketplace submission.

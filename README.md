@@ -16,11 +16,10 @@ Extract data from any website with thousands of trusted scrapers, crawlers, and 
 
 ## Installation
 
-Installation steps live in the Apify docs — **[Apify → Qoder integration](https://docs.apify.com/integrations/qoder)**:
+Installation steps live in the Apify docs:
 
-- **[Qoder CLI](https://docs.apify.com/integrations/qoder-cli)**
-- **[Qoder IDE](https://docs.apify.com/integrations/qoder-ide)**
-- **[QoderWork](https://docs.apify.com/integrations/qoder-work)**
+- **[Qoder integration](https://docs.apify.com/integrations/qoder-plugin)** — install the plugin in the Qoder CLI, IDE, Desktop app, or QoderWork, or connect the Apify MCP server in QoderWake and the JetBrains plugin.
+- **[Qwen Code integration](https://docs.apify.com/integrations/qwen-code)** — Qwen Code reuses the same plugin.
 
 ## Authentication
 
@@ -45,7 +44,7 @@ The `apify` subagent picks the right route and skill automatically.
 
 The plugin lives in [`apify/`](./apify). Its `skills/` and `agents/` are **generated** from the `apify-plugins-internal` source of truth (the `qoder` platform) and propagate into this repo automatically via the sync — **do not hand-edit or hand-add them here**; change them upstream. The manifest (`apify/.qoder-plugin/plugin.json`), `apify/.mcp.json`, and `apify/qoder.md` are maintained directly in this repo.
 
-- **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to the marketplace (QoderWork/Qoder IDE and Qoder CLI).
+- **[RELEASE.md](./RELEASE.md):** versioning, cutting a release, and publishing to the Qoder marketplace.
 
 ## License
 
