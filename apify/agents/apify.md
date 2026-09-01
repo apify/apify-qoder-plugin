@@ -1,7 +1,6 @@
 ---
 name: apify
 description: "Apify agent for web scraping, automation, and Actor development. Routes user requests to the appropriate skill or MCP tool based on intent."
-tools: Read, Glob, Grep, Bash, WebFetch, WebSearch
 mcpServers:
   - apify
 skills:
