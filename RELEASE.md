@@ -61,6 +61,5 @@ End-user installation is documented in the Apify docs:
 ## Notes & open items
 
 - `.qoder-plugin/marketplace.json` is **Qoder-CLI-only**. The GUI surfaces (IDE, Desktop app, QoderWork) ignore it and take listing metadata from the publish form.
-- **MCP auth:** the bundled `.mcp.json` uses the bare `https://mcp.apify.com` URL; Qoder authorizes via OAuth on first use (no API token to paste). Verified in the Qoder CLI.
-- **Naming:** the marketplace favors a real-world role/job-title name; "Apify" is a brand and may draw review feedback.
+- **MCP auth:** the bundled `.mcp.json` points at `https://mcp.apify.com` (with a `client` query param) and declares both `url` and `httpUrl` for cross-host compatibility; Qoder authorizes via OAuth on first use (no API token to paste). Verified in the Qoder CLI.
 - **Skill content placeholders:** skills document credentials with placeholders (`<APIFY_TOKEN>`, `export APIFY_TOKEN=your_token_here`). This is standard and satisfies the "no real credentials in examples" rule, but a strict automated review *could* flag them. Watch for this on the first marketplace submission.
