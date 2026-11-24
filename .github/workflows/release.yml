@@ -62,7 +62,9 @@ jobs:
     name: Bump manifests and update changelog
     needs: [release_metadata]
     runs-on: ubuntu-latest
-    environment: automation
+    environment:
+      name: automation
+      deployment: false
     permissions:
       contents: write
     outputs:
